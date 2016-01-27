@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, dl, dd, figure, ol, ul, p, pre {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:active, a:focus,
+button:focus, input[type="button"] {
+  outline: none;
+}
+
+article, aside, details, figure, figcaption, footer, header, main, nav, section {
+  display: block;
+}
+
+address, em, i {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  vertical-align: top;
+}
+
+th, td {
+  padding: 0;
+}
+
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ドットインストール
+   ========================================================================== */
+/* ストップウォッチ
+   ========================================================================== */
+/*
+#timer {
+	color: #00aaff;
+	font-family: Arial, sans-serif;
+	font-size: 100px;
+	margin-bottom: 30px;
+}
+
+button {
+	width: 150px;
+	margin: 0 20px;
+}
+
+.inactive {
+	cursor: default;
+	@include opacity(0.5);
+}
+*/
+/* 5秒当てゲーム
+   ========================================================================== */
+/*
+#result {
+	color: #00aaff;
+	font-weight: bold;
+	@include fs(36);
+	margin-bottom: 40px;
+}
+*/
+/* 割り勘電卓
+   ========================================================================== */
+/*
+section {
+	margin-bottom: 30px;
+}
+
+h1 {
+	@include fs(32);
+	margin-bottom: 20px;
+}
+
+li:first-child {
+	margin-bottom: 10px;
+}
+
+input {
+	width: 150px;
+	@include fs(18);
+	text-align: right;
+	padding: 5px;
+}
+
+#btn {
+	margin-bottom: 30px;
+}
+*/
+/* 誕生日診断
+   ========================================================================== */
+/* 
+h1 {
+	margin-bottom: 30px;
+}
+
+li:first-child {
+	margin-bottom: 40px;
+}
+
+input[type="button"] {
+	margin-bottom: 40px;
+}
+ */
+/* 王様ゲーム
+   ========================================================================== */
+/* 
+h1 {
+	margin-bottom: 30px;
+}
+
+li:first-child {
+	margin-bottom: 40px;
+}
+
+input[type="button"] {
+	margin-bottom: 40px;
+}
+*/

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>tableで並列</title>
+<meta charset="utf-8">
+<meta name="viewport" content="withh=device-withh, initial-scale=1">
+<link rel="stylesheet" href="css/top.css">
+<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+<h1>右揃えテキストと左揃えテキストのセンター配置</h1>
+<div id="block-01">
+<table>
+<tr>
+	<th>東京支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>神奈川支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>アメリカ支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>ヨーロッパ支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>ダミーテキスト</th>
+	<td>後ろで大きな爆発音がした。</td>
+</tr>
+<tr>
+	<th>この文章はダミーです</th>
+	<td>つれづれなるまゝに</td>
+</tr>
+<tr>
+	<th>小供の時から損ばかりしている</th>
+	<td>Lorem ipsum dolor sit amet</td>
+</tr>
+<tr>
+	<th>小学校に居る時分</th>
+	<td>03-1234-567890</td>
+</tr>
+</table>
+</div>
+
+
+
+<h1>右揃えテキストと左揃えテキストブロックを複数並列（Flexboxを併用）</h1>
+<div id="block-02">
+<table>
+<tr>
+	<th>東京支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>神奈川支店</th>
+	<td>03-1234-5678</td>
+</tr>
+<tr>
+	<th>アメリカ支店</th>
+	<td>03-1234-56789</td>
+</tr>
+<tr>
+	<th>ヨーロッパ支店</th>
+	<td>03-1234-567890</td>
+</tr>
+</table>
+<table>
+<tr>
+	<th>ダミーテキスト</th>
+	<td>後ろで大きな爆発音がした。</td>
+</tr>
+<tr>
+	<th>この文章はダミーです</th>
+	<td>つれづれなるまゝに</td>
+</tr>
+<tr>
+	<th>小供の時から損ばかりしている</th>
+	<td>Lorem ipsum dolor sit amet</td>
+</tr>
+<tr>
+	<th>小学校に居る時分</th>
+	<td>03-1234-567890</td>
+</tr>
+</table>
+</div>
+
+
+
+<h1>背景ありテキストブロックの天地中央揃え（Flexboxを併用）</h1>
+<div id="block-03">
+<table>
+<tr>
+	<td>この文章はダミーです</td>
+	<td class="space"></td>
+	<td>親譲りの無鉄砲で小供の時から損ばかりしている</td>
+	<td class="space"></td>
+	<td>文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+	<td class="space"></td>
+	<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit</td>
+</tr>
+</table>
+</div>
+
+
+
+<h1>連番と複数行テキストの天地中央揃え</h1>
+<div id="block-04">
+<table>
+<tr>
+	<th>01</th>
+	<td>後ろで大きな爆発音がした。</td>
+</tr>
+</table>
+<table>
+<tr>
+	<th>23</th>
+	<td>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</td>
+</tr>
+</table>
+<table>
+<tr>
+	<th>45</th>
+	<td>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。</td>
+</tr>
+</table>
+<table>
+<tr>
+	<th>67</th>
+	<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+</tr>
+</table>
+</div>
+
+
+
+</body>
+</html>

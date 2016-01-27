@@ -1,0 +1,192 @@
+@charset "UTF-8";
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, dl, dd, figure, ol, ul, p, pre {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:active, a:focus,
+button:focus, input[type="button"] {
+  outline: none;
+}
+
+article, aside, details, figure, figcaption, footer, header, main, nav, section {
+  display: block;
+}
+
+address, em, i {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  vertical-align: top;
+}
+
+th, td {
+  padding: 0;
+}
+
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", "Osaka", sans-serif;
+  padding: 40px 20px;
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+div {
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* 右揃えと左揃えテキストセットのセンター配置
+   ========================================================================== */
+#block-01 table {
+  width: 100%;
+}
+#block-01 th, #block-01 td {
+  width: 50%;
+}
+#block-01 th {
+  text-align: right;
+  font-weight: normal;
+  padding-right: 20px;
+}
+
+/* 右揃えテキストと左揃えテキストブロックを複数並列（Flexboxを併用）
+   ========================================================================== */
+#block-02 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#block-02 table {
+  margin: 0 10px;
+}
+#block-02 th, #block-02 td {
+  width: 50%;
+}
+#block-02 th {
+  text-align: right;
+  font-weight: normal;
+  padding-right: 20px;
+}
+
+/* 背景ありテキストブロックの天地中央揃え（Flexboxを併用）
+   ========================================================================== */
+#block-03 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#block-03 td {
+  width: 200px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+  vertical-align: middle;
+  padding: 0 20px;
+  background: #666;
+}
+#block-03 .space {
+  width: 20px;
+  padding: 0;
+  background: white;
+}
+
+/* 連番と複数行テキストの天地中央揃え
+   ========================================================================== */
+#block-04 table:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+#block-04 th, #block-04 td {
+  vertical-align: middle;
+}
+#block-04 th {
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: #666;
+}
+#block-04 td {
+  padding: 0 20px;
+}

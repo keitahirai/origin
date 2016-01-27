@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "compass";
+@import "reset";
+@import "mixin";
+
+body {
+	font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", "Osaka", sans-serif;
+	padding: 40px 20px;
+}
+
+article {
+	margin-bottom: 100px;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1 {
+	@include fs(24);
+	margin-bottom: 5px;
+	line-height: 1.2;
+}
+
+div {
+	margin-bottom: 50px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+
+/* 右揃えと左揃えテキストセットのセンター配置
+   ========================================================================== */
+#block-01 {
+	table {
+		width: 100%;
+	}
+
+	th, td {
+		width: 50%;
+	}
+
+	th {
+		text-align: right;
+		font-weight: normal;
+		padding-right: 20px;
+	}
+}
+
+
+/* 右揃えテキストと左揃えテキストブロックを複数並列（Flexboxを併用）
+   ========================================================================== */
+#block-02 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	table {
+		margin: 0 10px;
+	}
+
+	th, td {
+		width: 50%;
+	}
+
+	th {
+		text-align: right;
+		font-weight: normal;
+		padding-right: 20px;
+	}
+}
+
+
+/* 背景ありテキストブロックの天地中央揃え（Flexboxを併用）
+   ========================================================================== */
+#block-03 {
+	display: flex;
+	justify-content: center;
+
+	td {
+		width: 200px;
+		height: 200px;
+		color: white;
+		text-align: center;
+		@include fs(18);
+		vertical-align: middle;
+		padding: 0 20px;
+		background: #666;
+	}
+
+	.space {
+		width: 20px;
+		padding: 0;
+		background: white;
+	}
+}
+
+
+/* 連番と複数行テキストの天地中央揃え
+   ========================================================================== */
+#block-04 {
+	table:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+
+	th, td {
+		vertical-align: middle;
+	}
+
+	th {
+		color: white;
+		font-weight: normal;
+		@include fs(24);
+		padding: 10px;
+		background: #666;
+	}
+
+	td {
+		padding: 0 20px;
+	}
+}
